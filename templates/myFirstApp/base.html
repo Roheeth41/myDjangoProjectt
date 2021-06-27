@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="stylesheet" href="{% static "myFirstApp/myStyle.css" %}" />
+</head>
+<body class="bg" style="background-image: url('{% static "myFirstApp/Images/BG.jpg" %}')" >
+    {% block content %}
+    <div class="topnav" id="Home Nav">
+        <a href="{% url 'index' %}">
+        <img src="{% static "myFirstApp/images/python.png" %}" alt="Python Image"; width="120" height="120">
+        </a>
+    </div>
+    <div id="Home Name" >
+        <br>
+        <h1>&nbsp Python Programming</h1>
+    </div>   
+    {% endblock %}
+</body>
+</html>

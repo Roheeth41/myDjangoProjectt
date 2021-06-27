@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static "myFirstApp/myStyle.css" %}" />
+  </head>
+  <body>
+   {% include './base.html' %}
+   <br><br>
+   <br><br>
+   <br><br>
+   <div style= "text-align:center;" >
+    <form>
+       <label> <b> Username </b> </label>
+       <input type= "text" required = "true" minlength = 5  maxlength = 10 ></input>
+       <br>
+       <br>
+       <label> <b> Aadhar No. </b> </label>
+       <input size="4" required = "true" pattern= [0-9]{1,4} maxlength="4"  ></input>
+       <input size="4" required = "true" pattern= [0-9]{1,4} maxlength="4" ></input>
+       <input size="4" required = "true" pattern= [0-9]{1,4} maxlength="4" ></input>
+  <br><br><br>
+      <button> GET PASSWORD </button>
+    </form>
+   </body>
+   </html>
+   

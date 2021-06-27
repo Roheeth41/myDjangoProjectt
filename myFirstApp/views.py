@@ -32,3 +32,12 @@ def index(request):
     user_data=User.objects.all() #get the data from database
     user_records={'User_Records':user_data}
     return render(request,'myFirstApp/index.html')
+
+def forgot_password(request):
+    return render(request,'myFirstApp/forgot.html')
+
+def register(request):
+    return render(request,'myFirstApp/register.html')
+
+def contact(request):
+    return render(request,'myFirstApp/contact.html')
