@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Records</title>
+    <link rel="stylesheet" href="{% static "myFirstApp/myStyle.css" %}" />
+  </head>
+  <body>
+    <div class="djangoUser">
+      {% if User_Records %}
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Nationality</th>
+        </thead>
+        {% for user in User_Records %}
+        <tr>
+          <td>{{ user.name }}</td>
+          <td>{{ user.age }}</td>
+          <td>{{ user.gender }}</td>
+          <td>{{ user.nationality }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% endif %}
+    </div>
+  </body>
+</html>

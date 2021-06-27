@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="{% static "myFirstApp/myStyle.css" %}" />
+  </head>
+  <body style="background-color: lavender">
+   <marquee style= "background-color:thistle; height: 20px"> <b> Sale - 40% off on all Products </b> </marquee>
+<div style= "text-align: center; background-color: lavender">
+   <h1> E KART LOGIN PAGE </h1>
+   <h3> Your solution for daily needs.......</h3>
+   <hr>
+   <br><br>
+<form>
+   <label> <b> Username </b> </label>
+   <input type= "text" required = "true" minlength = 5  maxlength = 8 ></input>
+   <br>
+  <br>
+   <label> <b> Password </b> </label>
+   <input type = "password" required = "true" min=5 max=8></input>
+   <br>
+  <br>
+
+  <label> <b> Age </b> </label>
+  <input type="number"></input>
+  <br>
+ <br>
+   <!-- <label> <b> Age </b> </label>
+   <input type = "number" required = "true" max= 3></input> -->
+   <label> <b> Aadhar No. </b> </label>
+   <input  required = "true" pattern= [0-9]{1,4}></input> -
+    <input  required = "true" pattern= [0-9]{1,4}></input> -
+    <input  required = "true" pattern= [0-9]{1,4}></input>
+
+<br><br><br>
+<button> LOGIN </button>
+<link> Forgot Password </link>
+
+</div>
+
+</form>
+  </body>
+</html>

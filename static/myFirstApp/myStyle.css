@@ -1,0 +1,20 @@
+h1 {
+  color: blue;
+}
+
+h3{
+  color : orange;
+}
+
+input:invalid {
+  border: blue solid 1px;
+}
+
+body {
+    padding-left: 15px;
+}
+table, th, td {
+  border: 2px solid black;
+
+  color: black;
+}
