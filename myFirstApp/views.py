@@ -31,4 +31,4 @@ def last_page(_):
 def index(request):
     user_data=User.objects.all() #get the data from database
     user_records={'User_Records':user_data}
-    return render(request,'myFirstApp/first.html',context=user_records)
+    return render(request,'myFirstApp/index.html')
