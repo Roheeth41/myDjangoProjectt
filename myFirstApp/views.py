@@ -8,7 +8,7 @@ cursor.execute('''SELECT USER FROM user_list''')
 row = cursor.fetchall()
 
 def db_connection_fetch(connection,query):
-    with connection.cursor() as con :
+    with connection.cursor() as con:
         con.execute(query)
         rows = con.fetchone()
     return rows
